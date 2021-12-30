@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addnewcontact" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="382.0" styleClass="bodybg" stylesheets="@bg.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phonebook.EditcontactController">
+   <children>
+      <Label fx:id="heading" layoutX="87.0" layoutY="188.0" prefHeight="79.0" prefWidth="208.0" text="Edit Contact" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="38.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="myImageView" fitHeight="185.0" fitWidth="195.0" layoutX="91.0" layoutY="8.0">
+         <image>
+            <Image url="@Phonebook_1/src/phonebook/name.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="firstnamefield" layoutX="40.0" layoutY="254.0" prefHeight="26.0" prefWidth="145.0" promptText="Enter First Name" />
+      <TextField fx:id="lastnamefield" layoutX="189.0" layoutY="255.0" prefHeight="26.0" prefWidth="145.0" promptText="Enter Last Name" />
+      <TextField fx:id="phonefield1" layoutX="39.0" layoutY="287.0" prefHeight="26.0" prefWidth="295.0" promptText="Enter Phone#" />
+      <TextField fx:id="phonefield2" layoutX="39.0" layoutY="318.0" prefHeight="26.0" prefWidth="295.0" promptText="Enter Phone#" />
+      <TextField fx:id="emailfield" layoutX="39.0" layoutY="348.0" prefHeight="26.0" prefWidth="295.0" promptText="Enter Email Address" />
+      <TextField fx:id="addressfield" layoutX="39.0" layoutY="378.0" prefHeight="26.0" prefWidth="295.0" promptText="Enter Home Address" />
+      <TextField fx:id="titlefield" layoutX="39.0" layoutY="408.0" prefHeight="26.0" prefWidth="295.0" promptText="Enter Title" />
+      <TextField fx:id="organizationfield" layoutX="39.0" layoutY="440.0" prefHeight="26.0" prefWidth="295.0" promptText="Enter Organization Name" />
+      <Button fx:id="Save" layoutX="204.0" layoutY="488.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="135.0" style="-fx-background-color: #082530; -fx-border-color: #ffffff;" text="Edit" textFill="#faf8f8">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="Cancel" layoutX="50.0" layoutY="488.0" mnemonicParsing="false" onAction="#canceledit" prefHeight="53.0" prefWidth="135.0" style="-fx-background-color: #082530; -fx-border-color: #ffffff;" text="Cancel" textFill="#faf9f9">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="addimage" layoutX="307.0" layoutY="172.0" mnemonicParsing="false" onAction="#addimg" prefHeight="26.0" prefWidth="32.0" style="-fx-background-color: #082530; -fx-border-color: #FFFFFF;" text="Add Avatar" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

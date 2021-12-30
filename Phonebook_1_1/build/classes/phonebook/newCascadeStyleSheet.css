@@ -1,0 +1,33 @@
+
+
+.table-row-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent
+}
+
+.table-row-cell:hover{
+    -fx-background-color: transparent;
+}
+
+/*.table-row-cell:selected{
+    -fx-background-color: transparent;
+}*/
+
+.list-cell:empty{
+    -fx-background-color: transparent;
+  
+}
+.list-cell:filled{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+       -fx-text-fill: white;
+}
+.list-cell{
+    -fx-font-size: 15.0
+}
+/*.list-cell:cell-selection{
+    -fx-background-color:blue;
+}*/
+.list-cell:selected{
+    -fx-background-color:blue;
+}
